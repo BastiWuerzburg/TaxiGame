@@ -86,6 +86,8 @@ label start:
                 jump old_lady
             "Stripper Nun":
                 jump stripper_nun
+            "Brain in a Jar":
+                jump simulation
             "END":
                 jump end_game
 

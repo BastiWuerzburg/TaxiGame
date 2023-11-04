@@ -16,9 +16,9 @@ label simulation:
         "Tell them the truth":
             jump truth
         "Play along":
-            jump play along
+            jump play_along
         "Change the parameters":
-            jump change the parameters
+            jump change_the_parameters
             
     label truth:
         y "Umm, Brain, my friend, are you aware that the world you’re living in is, in fact, a simulation?"
@@ -35,7 +35,7 @@ label simulation:
         "You decide to drive away and continue your day as usual"
         jump simulation_end
     
-    label play along:
+    label play_along:
         y "You know, Atlantis is quite the while away. Are you sure you will be able to afford the trip?"
         biaj " I can. I might not look like it, but I’m a politician on a diplomatic mission. So I earn quite a sum"
         y "That’s nice. Have you ever been to Atlantis? I haven’t."
@@ -46,7 +46,7 @@ label simulation:
         "The Brainn exits the taxi, thanks you, pays and leaves leaving you to continue your day as usual."
         jump simulation_end
     
-    label change the parameters:
+    label change_the_parameters:
         "You decide to change the parameters of the simulation"
         biaj "What? What happened, why are we in candyland all of a sudden? How did we get here?"
         y "What do you mean? We’ve always been here."
