@@ -12,6 +12,12 @@ default top_hat = False
 default karma = 50
 default money = 0
 
+camera:
+    perspective True
+
+camera background:
+    perspective True
+
 # animations 
 
 image orange moving:
@@ -30,13 +36,15 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene room
+    scene room#:
+        #xalign 0.5 yalign 0.5 zpos -1000
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show eileen happy#:
+        #xalign 0.5 yalign 0.5 zpos 100
 
     # These display lines of dialogue.
 
@@ -46,35 +54,46 @@ label start:
     # This ends the game.
 
     label choose_passenger:
-    menu:
 
-        "Choose a passenger"
-        "Drunken Conspiracy Theorist":
-            jump conspiracy
-        "Goose":
-            jump goose
-        "Alien":
-            jump alien
-        "Stalker":
-            jump stalker
-        "Wallet":
-            jump wallet
-        "Kpop":
-            jump kpop
-        "Beach":
-            jump beach
-        "END":
-            jump end_game
+        scene bg backseats#:
+            #xalign 0.5 yalign 0.5 zpos -1000
+        show bg frontseat#:
+            #xalign 0.5 yalign 0.5 zpos 100
+        show fg dashboard#:
+            #xalign 0.5 yalign 0.5 zpos 200
+
+        menu:
+            "Choose a passenger"
+            "Drunken Conspiracy Theorist":
+                jump conspiracy
+            "Goose":
+                jump goose
+            "Alien":
+                jump alien
+            "Stalker":
+                jump stalker
+            "Wallet":
+                jump wallet
+            "Kpop":
+                jump kpop
+            "Beach":
+                jump beach
+            "Karen":
+                jump karen
+            "END":
+                jump end_game
 
     label game:
 
-        scene red
+        scene red#:
+            #xalign 0.5 yalign 0.5 zpos -1000
 
         y "red"
 
     label book:
 
-        scene blue
+        scene blue#:
+            #xalign 0.5 yalign 0.5 zpos -1000
 
         y "blue"
 
