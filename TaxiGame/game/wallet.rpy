@@ -35,3 +35,4 @@ label wallet:
         "you keep the wallet"
     
     label wallet_end:
+    jump choose_passenger

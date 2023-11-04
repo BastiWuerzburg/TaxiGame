@@ -41,31 +41,28 @@ label start:
     # These display lines of dialogue.
 
     y "You've created a new Ren'Py game."
-
     y "Once you add a story, pictures, and music, you can release it to the world!"
 
     # This ends the game.
 
-
+    label choose_passenger:
     menu:
 
-        y "Choose a passenger"
-
+        "Choose a passenger"
         "Drunken Conspiracy Theorist":
             jump conspiracy
-
         "Goose":
             jump goose
-
         "Alien":
             jump alien
-
         "Stalker":
             jump stalker
-
         "Wallet":
             jump wallet
-
+        "Kpop":
+            jump kpop
+        "Beach":
+            jump beach
         "END":
             jump end_game
 

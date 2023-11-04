@@ -13,7 +13,7 @@ label goose:
 
         "Understand teh destination":
             jump understand
-            
+
         "Honk":
             jump honk
 
@@ -45,3 +45,4 @@ label goose:
         "You manage to barely get them back before you continue your trip."
     
     label goose_end:
+    jump choose_passenger

@@ -41,3 +41,4 @@ label conspiracy:
         "The drunken conspiracy theorist pays up unhapily and gets out. Next time wake the drunk person up you idiot!"
     
     label conspiracy_end:
+    jump choose_passenger

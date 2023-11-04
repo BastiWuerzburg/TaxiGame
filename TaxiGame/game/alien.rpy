@@ -60,3 +60,4 @@ label alien:
         y "Hm, how troublesome. Anyway, here we are. If you ring the top doorbell, my wife should answer. You can meet her then."
 
     label alien_end:
+    jump choose_passenger

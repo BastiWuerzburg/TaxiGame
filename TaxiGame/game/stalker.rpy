@@ -44,3 +44,4 @@ label stalker:
         s "Thank you so much."
 
     label stalker_end:
+    jump choose_passenger
