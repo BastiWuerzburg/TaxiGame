@@ -19,6 +19,7 @@ label conspiracy:
         dct "You get it my man, its rare to see any people who actually acknowledge the truth these days."
         y "Sure... have a nice ride."
         dct "I thank you from the bottom of my heart, you have saved my life today."
+        $ += 1
         jump conspiracy_end
     
     label pigeon:
@@ -28,6 +29,7 @@ label conspiracy:
         "You stop the car as per request"
         "The man stumbles out of the car and starts to frantically run of"
         dct "You will never take me alive! I have seen through your schemes, you wont ever fool me!"
+        $ += 0
         jump conspiracy_end
     
     label drive_sober:
@@ -39,6 +41,7 @@ label conspiracy:
         y "Nope, now pay up. You have amassed quite the price due to time and distance traveled."
         y "Also, take back your tinfoil-tophat. I already have my own hat."
         "The drunken conspiracy theorist pays up unhapily and gets out. Next time wake the drunk person up you idiot!"
+        $ -= 1
     
     label conspiracy_end:
     jump choose_passenger
