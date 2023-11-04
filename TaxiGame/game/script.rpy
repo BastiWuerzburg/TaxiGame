@@ -54,8 +54,8 @@ label start:
         "Drunken Conspiracy Theorist":
             jump conspiracy
 
-        "It's an interactive book.":
-            jump book
+        "Goose":
+            jump goose
 
     label game:
 
