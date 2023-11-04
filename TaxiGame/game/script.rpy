@@ -7,7 +7,7 @@
 define y = Character("You")
 
 default purse_found = False
-default tin_foil_hat = False
+default tinfoil_hat = False
 default top_hat = False
 default karma = 50
 default money = 0
@@ -49,10 +49,10 @@ label start:
 
     menu:
 
-        y "Sure, but what's a \"visual novel?\""
+        y "Choose a passenger"
 
-        "It's a videogame.":
-            jump game
+        "Drunken Conspiracy Theorist":
+            jump conspiracy
 
         "It's an interactive book.":
             jump book
