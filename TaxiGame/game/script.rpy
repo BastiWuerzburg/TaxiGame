@@ -80,6 +80,10 @@ label start:
                 jump beach
             "Karen":
                 jump karen
+            "Bonzai Tree":
+                jump bonzai
+            "Old Lady":
+                jump old_lady
             "END":
                 jump end_game
 
