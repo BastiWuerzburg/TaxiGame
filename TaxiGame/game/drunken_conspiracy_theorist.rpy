@@ -1,5 +1,4 @@
 define dct = Character("Drunken Conspiracy Theorist")
-define y = Character("You")
 
 label conspiracy:
 
@@ -8,7 +7,7 @@ label conspiracy:
     dct "Anywhere is fine, just not here! Take this tinfoil-tophat,its the only protection against their mind reading feathers."
     
     menu:
-    
+        "Take a choice."
         "Accept the tinfoil-tophat and drive him to his destination":
             jump tinfoil_hat
         "Make subtle pigeon noises":

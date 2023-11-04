@@ -57,6 +57,18 @@ label start:
         "Goose":
             jump goose
 
+        "Alien":
+            jump alien
+
+        "Stalker":
+            jump stalker
+
+        "Wallet":
+            jump wallet
+
+        "END":
+            jump end_game
+
     label game:
 
         scene red
@@ -83,4 +95,5 @@ label start:
 
         pause
 
+label end_game:
     return
