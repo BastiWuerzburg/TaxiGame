@@ -27,6 +27,13 @@ image orange moving:
     linear 5.0 xalign 1.0
     repeat
 
+# stats
+
+screen Karma:
+     text "Karma [karma]" xpos 0.1 ypos 0.1
+
+screen Money:
+     text "Money [money]" xpos 0.1 ypos 0.2
 
 # The game starts here.
 
@@ -61,6 +68,8 @@ label start:
             #xalign 0.5 yalign 0.5 zpos 100
         show fg dashboard#:
             #xalign 0.5 yalign 0.5 zpos 200
+        show screen Karma
+        show screen Money
 
         menu:
             "Choose a passenger"

@@ -29,6 +29,8 @@ label bonzai:
         bo "Many thanks. Now I might tree able to focus and find the root of the problem. Great progress for the indus-tree."
         y "You're very welcome. We should be arriving momentariTree, just after that leaf-t turn."
         bo "Oak-ay! Here, have some oxygen, no twigs attached."
+        $ karma += 2
+        $ money += 0
         jump bonzai_end
 
     label public_water_fountain:
@@ -36,6 +38,8 @@ label bonzai:
         bo "Excellent! I couldn’t stand the sappy comments from the Tree-o, especially Acorn. It’s nuts!"
         y "The park is right over there. I’ll wait for you while you go get a drink."
         bo "Thank you. I live for rest."
+        $ karma += 1
+        $ money += 1
         jump bonzai_end
 
     label heat:
@@ -46,6 +50,8 @@ label bonzai:
         bo "I can’t be-leaf it! How could you? What tree- chery! I could get sick!"
         y "Really? But it’s no issue, we’ll be at your destination before that happens."
         bo "That’s a re-leaf. What horrible tree-tment."
+        $ karma -= 5
+        $ money += 0
 
     label bonzai_end:
     jump choose_passenger
