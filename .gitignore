@@ -13,6 +13,8 @@ renpy-8.1.3-sdk/log.txt
 renpy-8.1.3-sdk/tutorial/log.txt
 renpy-8.1.3-sdk/the_question/log.txt
 TaxiGame/log.txt
+TaxiGame/errors.txt
+TaxiGame/traceback.txt
 
 *.rpyc
 *.rpymc
