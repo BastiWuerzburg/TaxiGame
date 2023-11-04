@@ -84,6 +84,8 @@ label start:
                 jump bonzai
             "Old Lady":
                 jump old_lady
+            "Stripper Nun":
+                jump stripper_nun
             "END":
                 jump end_game
 
