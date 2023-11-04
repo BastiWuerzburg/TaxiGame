@@ -1,44 +1,65 @@
-define dct = Character("Drunken Conspiracy Theorist")
+define biaj = Character("Brain in a jar")
 
-label conspiracy:
+label simulation:
 
-    dct "You gotta get me out of here! The government is mind reading and pidgeons are coming!"
-    y "Pigeons? Thats a new one. Where do you want to go?"
-    dct "Anywhere is fine, just not here! Take this tinfoil-tophat,its the only protection against their mind reading feathers."
-    
+    y "So, how are you today?"
+    biaj "Quite well. This under water craft seems equipped for many happenings."
+    y "Ok…? Anyway, where would you like to go?"
+    biaj " Ah yes, a destination. I suppose Atlantis would do."
+    y "I’m not quite sure how to get there. Is the aquarium alright too?"
+    biaj "Yes, that’s what I said."
+    y "Alrighty then, let’s go."
+    biaj "Yes, depart."
+    y "(It seems that brain is in a simulation)"
     menu:
         "Take a choice."
-        "Accept the tinfoil-tophat and drive him to his destination":
-            jump tinfoil_hat
-        "Make subtle pigeon noises":
-            jump pigeon
-        "Drive arround to increase his payment until he is sober":
-            jump drive_sober
+        "Tell them the truth":
+            jump truth
+        "Play along":
+            jump play along
+        "Change the parameters":
+            jump change the parameters
             
-    label tinfoil_hat:
-        dct "You get it my man, its rare to see any people who actually acknowledge the truth these days."
-        y "Sure... have a nice ride."
-        dct "I thank you from the bottom of my heart, you have saved my life today."
-        jump conspiracy_end
+    label truth:
+        y "Umm, Brain, my friend, are you aware that the world you’re living in is, in fact, a simulation?"
+        biaj "Truly? But that can’t be. Everything is so real."
+        y "It’s the truth. We are not in a submarine, but on land. Think about it. How would you be able to withstand the pressure of the sea floor in that jar of yours."
+        biaj "..."
+        biaj "You have a point… What about atlantis?"
+        y "Atlantis is a myth. A legend humans came up with."
+        biaj "..."
+        y "I’ll give you some time to process."
+        biaj "..."
+        "You stop at the aquarium and the brain gets of the taxi"
+        "After getting back to solid ground it just stays still on the walkway."
+        "You decide to drive away and continue your day as usual"
+        jump simulation_end
     
-    label pigeon:
-        dct "Oh no... they have found us! Drive faster we need to escape! Can you hear them ecolocate us?"
-        y "What do you mean? I can not hear anything."
-        dct "Why are you not accelerating? They are all aroun... wait... youre one of THEM! Halt the car this instant!"
-        "You stop the car as per request"
-        "The man stumbles out of the car and starts to frantically run of"
-        dct "You will never take me alive! I have seen through your schemes, you wont ever fool me!"
-        jump conspiracy_end
+    label play along:
+        y "You know, Atlantis is quite the while away. Are you sure you will be able to afford the trip?"
+        biaj " I can. I might not look like it, but I’m a politician on a diplomatic mission. So I earn quite a sum"
+        y "That’s nice. Have you ever been to Atlantis? I haven’t."
+        biaj "No, but I hear it’s a beautiful place worth seeing."
+        y "How nice."
+        "You proceed to drive to the aquarium as requested "
+        y "We have arrived dear sir."
+        "The Brainn exits the taxi, thanks you, pays and leaves leaving you to continue your day as usual."
+        jump simulation_end
     
-    label drive_sober:
-        "You drive around for a few hours making the taximeter count higher in the proccess" # background changes to darker colour
-        "Having sobered up the man wakes up after having fallen asleep"
-        dct "Where am i? who are you?"
-        y "Im your taxi driver and youve asked me to drive as far away from the mind reading pidgeons as possible"
-        dct "wha...? I was just at the bar! You didnt kidnap me did you?"
-        y "Nope, now pay up. You have amassed quite the price due to time and distance traveled."
-        y "Also, take back your tinfoil-tophat. I already have my own hat."
-        "The drunken conspiracy theorist pays up unhapily and gets out. Next time wake the drunk person up you idiot!"
+    label change the parameters:
+        "You decide to change the parameters of the simulation"
+        biaj "What? What happened, why are we in candyland all of a sudden? How did we get here?"
+        y "What do you mean? We’ve always been here."
+        biaj "No, we were in the ocean just a minute ago."
+        y "Maybe you were dreaming"
+        biaj "Perhaps I was…"
+        "You decide to change the parameters again"
+        biaj "IT HAPPENED AGAIN! Now we’re in hell!"
+        y "Are we? I thought you said candyland."
+        biaj "What is happening??"
+        y "Nothing unusual."
+        "You drop the extremely confused brain of at the aquarium and they pay you the normal price."
+        "You drive away hoping you didn´t ruin their mental stability to much"
     
-    label conspiracy_end:
+    label simulation_end:
     jump choose_passenger
