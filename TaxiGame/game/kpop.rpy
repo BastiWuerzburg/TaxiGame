@@ -1,6 +1,6 @@
 # Scenario 8: K-Drama Plot
 
-define hb = Character("Name Hyun Bong")
+define hb = Character("Hyun Bong")
 
 label kpop:
 

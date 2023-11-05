@@ -30,12 +30,11 @@ camera background:
 
 # animations 
 
-image orange moving:
+image mc_moving:
     animation
-    "orange"
-    xalign 0.0
+    "mc"
+    xalign -1.0
     linear 5.0 xalign 1.0
-    repeat
 
 # stats
 
@@ -49,26 +48,22 @@ screen Money:
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    play music "sounds/bg.mp3"
 
-    scene room#:
-        #xalign 0.5 yalign 0.5 zpos -1000
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy#:
-        #xalign 0.5 yalign 0.5 zpos 100
+    scene background_video
+    show backseats:
+        xalign 0.5 yalign 0.5 zpos 1
+    show frontseat:
+        xalign 0.5 yalign 0.5 zpos 0.5
+    show dashboard:
+        xalign 0.5 yalign 0.5 zpos 0.01
+    show mc_moving
 
     # These display lines of dialogue.
 
-    y "You've created a new Ren'Py game."
-    y "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
+    y "A new work day has begun."
+    y "My taxi here I come!"
+    y "I feel like today is gonna be a good day."
 
     label choose_passenger:
 
@@ -86,12 +81,15 @@ label start:
         if pasangengersLeft < 1:
             jump game_end
         #select a random passenger    
-        $passenger = passengers[passenger_indexes.pop(int(renpy.random.random() * len(passenger_indexes) - 1))]
+        #$passenger = passengers[passenger_indexes.pop(int(renpy.random.random() * len(passenger_indexes) - 1))]
+        $passenger = passengers[1]
         $pasangengersLeft -= 1
         
         menu:
            #create a menug item
             "Pick up [passenger]":
+                play sound ["sounds/close.wav","sounds/close.wav","sounds/start.wav"]
+                pause 2.1
                 $renpy.jump(jump_labels[passengers.index(passenger)])
 
             "END":
