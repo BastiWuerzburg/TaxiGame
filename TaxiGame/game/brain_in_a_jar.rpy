@@ -47,7 +47,7 @@ label simulation:
         y "We have arrived dear sir."
         "The Brainn exits the taxi, thanks you, pays and leaves leaving you to continue your day as usual."
         $ karma += 0
-        $ money += 0
+        $ money += 20
         jump simulation_end
     
     label change_the_parameters:
@@ -65,7 +65,7 @@ label simulation:
         "You drop the extremely confused brain of at the aquarium and they pay you the normal price."
         "You drive away hoping you didn´t ruin their mental stability to much"
         $ karma -= 1
-        $ money += 0
+        $ money += 20
     
     label simulation_end:
     jump choose_passenger

@@ -34,7 +34,7 @@ label kpop:
         y "We’re almost at the airport, now go get her!"
         hb "Thank you so much!"
         $ karma += 1
-        $ money += 0
+        $ money += 20
         jump kpop_end
 
     label speed_limit:
@@ -50,7 +50,7 @@ label kpop:
         y "Well whatever she said, I hope you can fix it. We’re here now, so good luck, young man!"
         hb "Thank you, Mister!"
         $ karma += 0
-        $ money += 0
+        $ money += 30
         jump kpop_end
 
     label drive_slowly:
@@ -69,7 +69,7 @@ label kpop:
         y "…. Well we’re here now, so good luck."
         hb "Yeah, the flight just left. I’ll go check anyway, but I don’t think I’ll catch her thanks to you. Thanks for nothing, I guess."
         $ karma -= 1
-        $ money += 0
+        $ money += 40
 
     label kpop_end:
     jump choose_passenger

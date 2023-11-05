@@ -28,13 +28,15 @@ label old_lady:
           y "Let me help you with those bags."
           ol "Oh that is so kind of you sir!"
           "You get out of the car and help the lady carry her groceries up to the fourth floor where she lives"
-          ol "Thank you so much for your help! It would have taken me double, no triple as long to carry these here than without your help. How could I repay your kindness?"
+          ol "Thank you so much for your help!" 
+          ol "It would have taken me double, no triple as long to carry these here than without your help." 
+          ol "Take this extra money as your prize kind sir."
           y "You flatter me, all that matters is that you can now prepare the meal for your family earlier than planned."
           ol "Thank you so, so much!"
           y "It is my pleasure, your welcome."
           "You walk back downstairs and get back to driving your taxi"
           $ karma += 1
-          $ money += 0
+          $ money += 30
           jump old_lady_end
 
      label wait_old_lady:
@@ -43,7 +45,7 @@ label old_lady:
           y "No problem, you have good holidays as well."
           "As you drive away you wonder what floor the lady lived on for her to take so long to unlock a door"
           $ karma += 0
-          $ money += 0
+          $ money += 20
           jump old_lady_end
 
      label steel_food:     
@@ -51,7 +53,7 @@ label old_lady:
           "As you turn the corner a block away you barely make out the old woman looking around in a panic in your rear mirror."
           "Congratulations. You have taken the groceries of an old lady. Do you feel proud of yourself?"
           $ karma -= 1
-          $ money += 0
+          $ money += 20
 
      label old_lady_end:
      jump choose_passenger

@@ -40,7 +40,7 @@ label stripper_nun:
         y "Are you dressed yet? We're arriving."
         sc "Oh yes, I'm decent again. I need to hurry along. May God bless you, good Sir!"
         $ karma += 1
-        $ money += 0
+        $ money += 20
         jump stripper_nun_end
 
     label private_place:
@@ -50,7 +50,7 @@ label stripper_nun:
         sc "Thank you for waiting, let's head to the church now."
         y "Of course, sister. We're almost there."
         $ karma += 0
-        $ money += 0
+        $ money += 25
         jump stripper_nun_end
 
     label peep:

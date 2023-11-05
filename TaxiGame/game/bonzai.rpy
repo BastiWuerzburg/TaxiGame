@@ -30,7 +30,7 @@ label bonzai:
         y "You're very welcome. We should be arriving momentariTree, just after that leaf-t turn."
         bo "Oak-ay! Here, have some oxygen, no twigs attached."
         $ karma += 1
-        $ money += 0
+        $ money += 20
         jump bonzai_end
 
     label public_water_fountain:
@@ -39,7 +39,7 @@ label bonzai:
         y "The park is right over there. I’ll wait for you while you go get a drink."
         bo "Thank you. I live for rest."
         $ karma += 0
-        $ money += 1
+        $ money += 30
         jump bonzai_end
 
     label heat:
@@ -51,7 +51,7 @@ label bonzai:
         y "Really? But it’s no issue, we’ll be at your destination before that happens."
         bo "That’s a re-leaf. What horrible tree-tment."
         $ karma -= 1
-        $ money += 0
+        $ money += 20
 
     label bonzai_end:
     jump choose_passenger

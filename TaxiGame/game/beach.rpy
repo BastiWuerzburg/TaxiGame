@@ -33,7 +33,7 @@ label beach:
         y "If you're sure that's what you want just be sure to keep yourself warm, miss. Here you are, enjoy your time at the beach."
         ar "Thanks, I will."
         $ karma += 1
-        $ money += 0
+        $ money += 20
         jump beach_end
 
     label say_nothing:
@@ -50,7 +50,7 @@ label beach:
         ar "Oh do you see that little cabin? Just let me get off there, that's where we used to keep our boats." 
         y "I see. There you go, enjoy your time here."
         $ karma += 0
-        $ money += 0
+        $ money += 20
         jump beach_end
 
     label get_sick:
@@ -64,7 +64,7 @@ label beach:
         ar "Oh, absolutely, yes it does! Thanks for taking me."
         y "You enjoy your time and be sure to stay in the water for a while!"
         $ karma -= 1
-        $ money += 0
+        $ money += 20
 
     label beach_end:
     jump choose_passenger

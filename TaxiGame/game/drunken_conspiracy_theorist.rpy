@@ -20,7 +20,7 @@ label conspiracy:
         y "Sure... have a nice ride."
         dct "I thank you from the bottom of my heart, you have saved my life today."
         $ karma += 1
-        $ money += 0
+        $ money += 20
         jump conspiracy_end
     
     label pigeon:
@@ -44,7 +44,7 @@ label conspiracy:
         y "Also, take back your tinfoil-tophat. I already have my own hat."
         "The drunken conspiracy theorist pays up unhapily and gets out. Next time wake the drunk person up you idiot!"
         $ karma -= 1
-        $ money += 0
+        $ money += 60
     
     label conspiracy_end:
     jump choose_passenger
