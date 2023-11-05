@@ -8,10 +8,10 @@ define y = Character("You")
 default purse_found = False
 default tinfoil_hat = False
 default top_hat = False
-default karma = 50
+default karma = 0
 default money = 0
-default pasangengersLeft = 5
-default passengers = ["Drunken Conspiracy Theorist", "Goose", "Alien", "Stalker", "Wallet", "Kpop", "Beach", "Karen", "Bonzai Tree", "Old Lady", "Stripper Nun", "Brain in a Jar"]
+default pasangengersLeft = 7
+default passengers = ["Drunken Conspiracy Theorist", "Goose", "Alien", "Stalker Victim", "Wallet", "Kpop Fan", "Beach Girl", "Karen", "Bonzai Tree", "Old Lady", "Stripper Nun", "Brain in a Jar"]
         #define a array of jump labels
 default jump_labels = ["conspiracy", "goose", "alien", "stalker", "wallet", "kpop", "beach", "karen", "bonzai", "old_lady", "stripper_nun", "simulation"]
 default passenger_indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
@@ -40,10 +40,10 @@ image orange moving:
 # stats
 
 screen Karma:
-     text "Karma [karma]" xpos 0.1 ypos 0.1
+     text "Your karma is: [karma]" xpos 0.2 ypos 0.1
 
 screen Money:
-     text "Money [money]" xpos 0.1 ypos 0.2
+     text "Money earned: [money] $" xpos 0.2 ypos 0.2
 
 # The game starts here.
 
@@ -81,8 +81,7 @@ label start:
             xalign 0.9999 yalign 0 zpos 0.2
         show dashboard:
             xalign 0.5 yalign 0.5 zpos 0.01
-        show screen Karma
-        show screen Money
+        
         #todo: add and jump to a end scene
         if pasangengersLeft < 1:
             jump game_end

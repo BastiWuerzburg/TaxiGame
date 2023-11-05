@@ -6,15 +6,15 @@ label stripper_nun:
     scene background_video
     show backseats:
         xalign 0.5 yalign 0.5 zpos 1
+    show stripper:
+        xalign 0.4 yalign 0.6 zpos 0.6
     show frontseat:
         xalign 0.5 yalign 0.5 zpos 0.5
     show mc:
         xalign 0.9999 yalign 0 zpos 0.2
-    show bonzai:
-        xalign 0 yalign 0 zpos 0.1
     show dashboard:
         xalign 0.5 yalign 0.5 zpos 0.01
-
+    
     y "Where to?"
     sc "St. Micheals Church please."
     y "..."
@@ -49,6 +49,17 @@ label stripper_nun:
     label privacy_screen:
         y "Of course, go ahead, I won't be looking. It's not my Job to judge anyone." 
         sc "Thank you, Mister. I appreciate it."
+        scene background_video
+        show backseats:
+            xalign 0.5 yalign 0.5 zpos 1
+        show nun:
+            xalign 0.4 yalign 0.6 zpos 0.6
+        show frontseat:
+            xalign 0.5 yalign 0.5 zpos 0.5
+        show mc:
+            xalign 0.9999 yalign 0 zpos 0.2
+        show dashboard:
+            xalign 0.5 yalign 0.5 zpos 0.01
         y "Are you dressed yet? We're arriving."
         sc "Oh yes, I'm decent again. I need to hurry along. May God bless you, good Sir!"
         $ karma += 1
@@ -59,6 +70,17 @@ label stripper_nun:
         y "Ah, I don't think that's the best Idea, anyone could see you, a car has windows after all. Why don't I let you get out at a public restroom so you can change?"
         sc "Sure, that'd be alright as well. Oh, I think I see one right ahead. Please wait a second!"
         "gets out and returns dressed in a habit"
+        scene background_video
+        show backseats:
+            xalign 0.5 yalign 0.5 zpos 1
+        show nun:
+            xalign 0.4 yalign 0.6 zpos 0.6
+        show frontseat:
+            xalign 0.5 yalign 0.5 zpos 0.5
+        show mc:
+            xalign 0.9999 yalign 0 zpos 0.2
+        show dashboard:
+            xalign 0.5 yalign 0.5 zpos 0.01
         sc "Thank you for waiting, let's head to the church now."
         y "Of course, sister. We're almost there."
         $ karma += 0
@@ -76,6 +98,17 @@ label stripper_nun:
         y "Of course not, I need to keep my eyes on the road!"
         sc "Alright then..."
         "Sister Candice gets undressed, and you peep at her through the rear mirror. When she's almost finished dressing, she notices your eyes on her"
+        scene background_video
+        show backseats:
+            xalign 0.5 yalign 0.5 zpos 1
+        show nun:
+            xalign 0.4 yalign 0.6 zpos 0.6
+        show frontseat:
+            xalign 0.5 yalign 0.5 zpos 0.5
+        show mc:
+            xalign 0.9999 yalign 0 zpos 0.2
+        show dashboard:
+            xalign 0.5 yalign 0.5 zpos 0.01
         sc "Excuse me! What do you think you're doing?! This is not your private peepshow. You should be ashamed of yourself Stop the car right now and let me get off!"
         y "I didn't think one more guy seeing you in underwear would really make a difference. But as you wish, miss. Then this is your stop."
         "Sister Candice slams open the car door and runs off with an outraged huff"
