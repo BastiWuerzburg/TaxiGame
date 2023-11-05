@@ -16,7 +16,7 @@ default passengers = ["Drunken Conspiracy Theorist", "Goose", "Alien", "Stalker 
 default jump_labels = ["conspiracy", "goose", "alien", "stalker", "wallet", "kpop", "beach", "karen", "bonzai", "old_lady", "stripper_nun", "simulation"]
 default passenger_indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
-image background_video = Movie(play="Fenster_animation7.webm", pos=(0, 0), anchor=(0, 0))
+image background_video = Movie(play="Fenster_animation8.webm", pos=(0, 0), anchor=(0, 0))
 
 # 3D view settings
 
@@ -50,7 +50,7 @@ label start:
 
     play music "sounds/bg.mp3"
 
-    scene background_video
+    scene street
     show backseats:
         xalign 0.5 yalign 0.5 zpos 1
     show frontseat:
