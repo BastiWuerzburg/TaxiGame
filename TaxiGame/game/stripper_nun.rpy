@@ -7,7 +7,7 @@ label stripper_nun:
     show backseats:
         xalign 0.5 yalign 0.5 zpos 1
     show stripper:
-        xalign 0.4 yalign 0.6 zpos 0.6
+        xalign 0.45 yalign 10 zpos 0.6
     show frontseat:
         xalign 0.5 yalign 0.5 zpos 0.5
     show mc:
@@ -57,7 +57,7 @@ label stripper_nun:
         show backseats:
             xalign 0.5 yalign 0.5 zpos 1
         show nun:
-            xalign 0.4 yalign 0.6 zpos 0.6
+            xalign 0.45 yalign 10 zpos 0.6
         show frontseat:
             xalign 0.5 yalign 0.5 zpos 0.5
         show mc:
@@ -78,7 +78,7 @@ label stripper_nun:
         show backseats:
             xalign 0.5 yalign 0.5 zpos 1
         show nun:
-            xalign 0.4 yalign 0.6 zpos 0.6
+            xalign 0.45 yalign 10 zpos 0.6
         show frontseat:
             xalign 0.5 yalign 0.5 zpos 0.5
         show mc:
@@ -106,7 +106,7 @@ label stripper_nun:
         show backseats:
             xalign 0.5 yalign 0.5 zpos 1
         show nun:
-            xalign 0.4 yalign 0.6 zpos 0.6
+            xalign 0.45 yalign 10 zpos 0.6
         show frontseat:
             xalign 0.5 yalign 0.5 zpos 0.5
         show mc:

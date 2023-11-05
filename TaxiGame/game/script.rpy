@@ -30,12 +30,11 @@ camera background:
 
 # animations 
 
-image orange moving:
+image mc_moving:
     animation
-    "orange"
-    xalign 0.0
+    "mc"
+    xalign -1.0
     linear 5.0 xalign 1.0
-    repeat
 
 # stats
 
@@ -51,15 +50,20 @@ label start:
 
     play music "sounds/bg.mp3"
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    scene background_video
+    show backseats:
+        xalign 0.5 yalign 0.5 zpos 1
+    show frontseat:
+        xalign 0.5 yalign 0.5 zpos 0.5
+    show dashboard:
+        xalign 0.5 yalign 0.5 zpos 0.01
+    show mc_moving
 
-    scene room#:
-        #xalign 0.5 yalign 0.5 zpos -1000
+    # These display lines of dialogue.
 
-
-    # This ends the game.
+    y "A new work day has begun."
+    y "My taxi here I come!"
+    y "I feel like today is gonna be a good day."
 
     label choose_passenger:
 
