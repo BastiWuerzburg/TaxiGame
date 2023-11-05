@@ -81,8 +81,7 @@ label start:
         if pasangengersLeft < 1:
             jump game_end
         #select a random passenger    
-        #$passenger = passengers[passenger_indexes.pop(int(renpy.random.random() * len(passenger_indexes) - 1))]
-        $passenger = passengers[1]
+        $passenger = passengers[passenger_indexes.pop(int(renpy.random.random() * len(passenger_indexes) - 1))]
         $pasangengersLeft -= 1
         
         menu:
