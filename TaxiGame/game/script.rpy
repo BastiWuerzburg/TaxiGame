@@ -55,9 +55,10 @@ label start:
         xalign 0.5 yalign 0.5 zpos 1
     show frontseat:
         xalign 0.5 yalign 0.5 zpos 0.5
+    show mc_moving
     show dashboard:
         xalign 0.5 yalign 0.5 zpos 0.01
-    show mc_moving
+    
 
     # These display lines of dialogue.
 
