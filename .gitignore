@@ -28,3 +28,4 @@ TaxiGame/traceback.txt
 *.pyc
 *.cpython-39.pyc
 
+TaxiGame/project.json
