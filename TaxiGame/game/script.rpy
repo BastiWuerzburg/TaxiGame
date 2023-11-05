@@ -30,12 +30,11 @@ camera background:
 
 # animations 
 
-image orange moving:
+image mc_moving:
     animation
-    "orange"
-    xalign 0.0
+    "mc"
+    xalign -1.0
     linear 5.0 xalign 1.0
-    repeat
 
 # stats
 
@@ -49,24 +48,20 @@ screen Money:
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene room#:
-        #xalign 0.5 yalign 0.5 zpos -1000
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy#:
-        #xalign 0.5 yalign 0.5 zpos 100
+    scene background_video
+    show backseats:
+        xalign 0.5 yalign 0.5 zpos 1
+    show frontseat:
+        xalign 0.5 yalign 0.5 zpos 0.5
+    show dashboard:
+        xalign 0.5 yalign 0.5 zpos 0.01
+    show mc_moving
 
     # These display lines of dialogue.
 
-    y "You've created a new Ren'Py game."
-    y "Once you add a story, pictures, and music, you can release it to the world!"
+    y "A new work day has begun."
+    y "My taxi here I come!"
+    y "I feel like today is gonna be a good day."
 
     # This ends the game.
 
