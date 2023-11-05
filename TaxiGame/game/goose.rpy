@@ -11,11 +11,14 @@ label goose:
         xalign 0.9999 yalign 0 zpos 0.2
     show goose:
         xalign 0 yalign 0 zpos 0.1
+    play voice["sounds/quack.mp3"]
     show dashboard:
         xalign 0.5 yalign 0.5 zpos 0.01
 
     "A goose hops into the cab." 
     go "Honk! Honk! Honk!"
+        
+
 
     menu:
         "What are you going to do?"
@@ -23,7 +26,7 @@ label goose:
         "Empathise":
             jump empathise
 
-        "Understand teh destination":
+        "Understand the destination":
             jump understand
 
         "Honk":
@@ -38,13 +41,17 @@ label goose:
         $ karma += 1
         $ money += 20
         jump goose_end
+
     
     label understand:
         y "What was that you said?"
+        play voice["sounds/quack.mp3"]
         go "Honk"
         y "The hospital?"
         go "Suprised honks"
+        play voice["sounds/quack.mp3"]
         y "I understood where you want to go but i cant make out the rest, sorry about that."
+        play voice["sounds/quack.mp3"]
         go "Understanding honks"
         "Remaining in silence for the rest of the drive you deliver the goose at the hospital and wave it of with a smile on your face."
         $ karma += 0
@@ -53,8 +60,10 @@ label goose:
 
     label honk:
         y "Honks back at the goose"
+        play voice["sounds/quack.mp3"]
         go "surprised honks"
         y "Honks back at the goose"
+        play voice["sounds/quack.mp3"]
         go "angry honks"
         y "honks in response"
         "After having honked insults at the goose the entire trip and dropped them of at the wrong location the goose steals your car keys and tries to escape."

@@ -49,6 +49,8 @@ screen Money:
 
 label start:
 
+    play music "sounds/bg.mp3"
+
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
@@ -56,17 +58,6 @@ label start:
     scene room#:
         #xalign 0.5 yalign 0.5 zpos -1000
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy#:
-        #xalign 0.5 yalign 0.5 zpos 100
-
-    # These display lines of dialogue.
-
-    y "You've created a new Ren'Py game."
-    y "Once you add a story, pictures, and music, you can release it to the world!"
 
     # This ends the game.
 
@@ -87,12 +78,15 @@ label start:
         if pasangengersLeft < 1:
             jump end_game
         #select a random passenger    
-        $passenger = passengers[passenger_indexes.pop(int(renpy.random.random() * len(passenger_indexes) - 1))]
+        #$passenger = passengers[passenger_indexes.pop(int(renpy.random.random() * len(passenger_indexes) - 1))]
+        $passenger = passengers[1]
         $pasangengersLeft -= 1
         
         menu:
            #create a menug item
             "Pick up [passenger]":
+                play sound ["sounds/close.wav","sounds/close.wav","sounds/start.wav"]
+                pause 2.1
                 $renpy.jump(jump_labels[passengers.index(passenger)])
 
             "END":
