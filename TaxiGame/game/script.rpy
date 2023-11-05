@@ -85,7 +85,7 @@ label start:
         show screen Money
         #todo: add and jump to a end scene
         if pasangengersLeft < 1:
-            jump end_game
+            jump game_end
         #select a random passenger    
         $passenger = passengers[passenger_indexes.pop(int(renpy.random.random() * len(passenger_indexes) - 1))]
         $pasangengersLeft -= 1
@@ -96,35 +96,4 @@ label start:
                 $renpy.jump(jump_labels[passengers.index(passenger)])
 
             "END":
-                jump end_game
-
-    label game:
-
-        scene red#:
-            #xalign 0.5 yalign 0.5 zpos -1000
-
-        y "red"
-
-    label book:
-
-        scene blue#:
-            #xalign 0.5 yalign 0.5 zpos -1000
-
-        y "blue"
-
-        show green at left
-
-        y "green"
-
-        show pink at right
-
-        y "pink"
-
-        show orange moving
-
-        y "orange moves"
-
-        pause
-
-label end_game:
-    return
+                jump game_end
