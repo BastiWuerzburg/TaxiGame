@@ -3,7 +3,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-#define e = Character("Eileen")
 define y = Character("You")
 
 default purse_found = False
@@ -16,6 +15,8 @@ default passengers = ["Drunken Conspiracy Theorist", "Goose", "Alien", "Stalker"
         #define a array of jump labels
 default jump_labels = ["conspiracy", "goose", "alien", "stalker", "wallet", "kpop", "beach", "karen", "bonzai", "old_lady", "stripper_nun", "simulation"]
 default passenger_indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+image background_video = Movie(play="Fenster_animation6.webm", pos=(0, 0), anchor=(0, 0))
 
 # 3D view settings
 
@@ -71,14 +72,15 @@ label start:
 
     label choose_passenger:
 
-        scene backseats:
+        scene background_video
+        show backseats:
             xalign 0.5 yalign 0.5 zpos 1
-        #show bg backseats:
-        #    xalign 0.5 yalign 0.5 zpos 0.6
         show frontseat:
             xalign 0.5 yalign 0.5 zpos 0.5
+        show mc:
+            xalign 0.9999 yalign 0 zpos 0.2
         show dashboard:
-            xalign 0.5 yalign 0.5 zpos 0
+            xalign 0.5 yalign 0.5 zpos 0.01
         show screen Karma
         show screen Money
         #todo: add and jump to a end scene
