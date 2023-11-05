@@ -3,6 +3,18 @@ define a = Character("Alien")
 
 label alien:
 
+    scene background_video
+    show backseats:
+        xalign 0.5 yalign 0.5 zpos 1
+    show frontseat:
+        xalign 0.5 yalign 0.5 zpos 0.5
+    show mc:
+        xalign 0.9999 yalign 0 zpos 0.2
+    show alien:
+        xalign 0 yalign 0 zpos 0.1
+    show dashboard:
+        xalign 0.5 yalign 0.5 zpos 0.01
+
     a "//()2€(&\%7'@€2)==';"
     y "Ah, that's a language I haven't heard before. Would English be a language you speak?"
     a "Yeees, indeeeeed."

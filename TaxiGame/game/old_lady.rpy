@@ -3,6 +3,18 @@ define ol = Character("Old Lady")
 
 label old_lady:
 
+     scene background_video
+     show backseats:
+          xalign 0.5 yalign 0.5 zpos 1
+     show frontseat:
+          xalign 0.5 yalign 0.5 zpos 0.5
+     show mc:
+          xalign 0.9999 yalign 0 zpos 0.2
+     show granny:
+          xalign 0 yalign 0 zpos 0.1
+     show dashboard:
+          xalign 0.5 yalign 0.5 zpos 0.01
+
      ol "Hello there, could you take me to Fedora road 5 please?"
      y "Sure thing"
      "The old lady lifts two heavy looking grocery seperately into the taxi with a bit of effort and you depart soon after."

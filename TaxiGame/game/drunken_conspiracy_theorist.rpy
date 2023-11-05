@@ -2,6 +2,18 @@ define dct = Character("Drunken Conspiracy Theorist")
 
 label conspiracy:
 
+    scene background_video
+    show backseats:
+        xalign 0.5 yalign 0.5 zpos 1
+    show frontseat:
+        xalign 0.5 yalign 0.5 zpos 0.5
+    show mc:
+        xalign 0.9999 yalign 0 zpos 0.2
+    show conspiracy:
+        xalign 0 yalign 0 zpos 0.1
+    show dashboard:
+        xalign 0.5 yalign 0.5 zpos 0.01
+
     dct "You gotta get me out of here! The government is mind reading and pidgeons are coming!"
     y "Pigeons? Thats a new one. Where do you want to go?"
     dct "Anywhere is fine, just not here! Take this tinfoil-tophat,its the only protection against their mind reading feathers."

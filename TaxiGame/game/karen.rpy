@@ -2,6 +2,19 @@
 define ka = Character("Karen")
 
 label karen:
+
+    scene background_video
+    show backseats:
+        xalign 0.5 yalign 0.5 zpos 1
+    show frontseat:
+        xalign 0.5 yalign 0.5 zpos 0.5
+    show mc:
+        xalign 0.9999 yalign 0 zpos 0.2
+    show karen:
+        xalign 0 yalign 0 zpos 0.1
+    show dashboard:
+        xalign 0.5 yalign 0.5 zpos 0.01
+
     ka "Take me to the nearest café."
     y "There are multiple, which one do you mean?"
     ka "Are you deaf? I said the closest one."

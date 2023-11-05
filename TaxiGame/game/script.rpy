@@ -3,7 +3,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-#define e = Character("Eileen")
 define y = Character("You")
 
 default purse_found = False
@@ -11,6 +10,8 @@ default tinfoil_hat = False
 default top_hat = False
 default karma = 50
 default money = 0
+
+image background_video = Movie(play="Fenster_animation5.webm", pos=(0, 0), anchor=(0, 0))
 
 # 3D view settings
 
@@ -66,14 +67,16 @@ label start:
 
     label choose_passenger:
 
-        scene backseats:
+        scene background_video
+        show backseats:
             xalign 0.5 yalign 0.5 zpos 1
-        #show bg backseats:
-        #    xalign 0.5 yalign 0.5 zpos 0.6
         show frontseat:
             xalign 0.5 yalign 0.5 zpos 0.5
+        show mc:
+            xalign 0.9999 yalign 0 zpos 0.2
         show dashboard:
-            xalign 0.5 yalign 0.5 zpos 0
+            xalign 0.5 yalign 0.5 zpos 0.01
+        
         show screen Karma
         show screen Money
 

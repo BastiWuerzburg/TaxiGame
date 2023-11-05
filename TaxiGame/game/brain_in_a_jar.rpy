@@ -2,6 +2,18 @@ define biaj = Character("Brain in a jar")
 
 label simulation:
 
+    scene background_video
+    show backseats:
+        xalign 0.5 yalign 0.5 zpos 1
+    show frontseat:
+        xalign 0.5 yalign 0.5 zpos 0.5
+    show mc:
+        xalign 0.9999 yalign 0 zpos 0.2
+    show bonzai:
+        xalign 0 yalign 0 zpos 0.1
+    show dashboard:
+        xalign 0.5 yalign 0.5 zpos 0.01
+
     y "So, how are you today?"
     biaj "Quite well. This under water craft seems equipped for many happenings."
     y "Ok…? Anyway, where would you like to go?"

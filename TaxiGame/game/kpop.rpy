@@ -3,6 +3,19 @@
 define hb = Character("Name Hyun Bong")
 
 label kpop:
+
+    scene background_video
+    show backseats:
+        xalign 0.5 yalign 0.5 zpos 1
+    show frontseat:
+        xalign 0.5 yalign 0.5 zpos 0.5
+    show mc:
+        xalign 0.9999 yalign 0 zpos 0.2
+    show bonzai:
+        xalign 0 yalign 0 zpos 0.1
+    show dashboard:
+        xalign 0.5 yalign 0.5 zpos 0.01
+    
     hb "To the airport!"
     y "Alright" 
     hb "Please hurry!"
