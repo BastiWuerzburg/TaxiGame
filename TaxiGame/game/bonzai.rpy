@@ -3,6 +3,19 @@
 define bo = Character("Bonzai Tree")
 
 label bonzai:
+
+    scene background_video
+    show backseats:
+        xalign 0.5 yalign 0.5 zpos 1
+    show frontseat:
+        xalign 0.5 yalign 0.5 zpos 0.5
+    show mc:
+        xalign 0.9999 yalign 0 zpos 0.2
+    show bonzai:
+        xalign 0 yalign 0 zpos 0.1
+    show dashboard:
+        xalign 0.5 yalign 0.5 zpos 0.01
+
     y "My my, a Bonsai, haven’t had a plant in a while."
     bo "Yeah, I spruced myself of for a root-ine meeting."
     y "Where would you like to go, my friend?"

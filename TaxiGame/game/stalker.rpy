@@ -3,6 +3,18 @@ define s = Character("Stalker")
 
 label stalker:
 
+    scene background_video
+    show backseats:
+        xalign 0.5 yalign 0.5 zpos 1
+    show frontseat:
+        xalign 0.5 yalign 0.5 zpos 0.5
+    show mc:
+        xalign 0.9999 yalign 0 zpos 0.2
+    show bonzai:
+        xalign 0 yalign 0 zpos 0.1
+    show dashboard:
+        xalign 0.5 yalign 0.5 zpos 0.01
+
     y "Where would you-"
     s "Anywhere! Away from here! There’s this really creepy guy following me."
 
