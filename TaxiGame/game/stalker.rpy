@@ -30,7 +30,8 @@ label stalker:
     label detours:
         y "Alrighty, I've got you covered. Hop in."
         s "Thank you so much, I just noticed the guy and started walking faster."
-        y "You wouldn't be the first one to ask me such a favour. I'm going to drive a confusing route and bring you to a populated area, or would you prefer a different location?"
+        y "You wouldn't be the first one to ask me such a favour." 
+        y "I'm going to drive a confusing route and bring you to a populated area, or would you prefer a different location?"
         s "No, that would be great, I can call a friend when I loaded my phone."
         y "No problem at all."
         $ karma += 1
@@ -43,7 +44,8 @@ label stalker:
         y "I'm afraid I'm going to need a location."
         s "Please! I need to get away from here!"
         y "To where?"
-        s "To the police; yeah, that's where I need to go, or the mall, or home? No - not home, they would follow me there. Then maybe the train station or-"
+        s "To the police; yeah, that's where I need to go, or the mall, or home?" 
+        s "No - not home, they would follow me there. Then maybe the train station or-"
         y "If you want to get away fast, you should make a decision."
         s "Yes, yes, just take me to the nearest police station."
         y "Very well, off we go."

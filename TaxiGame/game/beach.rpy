@@ -58,7 +58,8 @@ label beach:
         ar "I guess it will eventually get better when our kids grow up a little."
         y "How old are your kids?"
         ar "We've got two little girls, they're turning seven in a month. I love them to death but it's really stressful too, you know?"
-        ar "My husband really doesn't put in a lot of effort to coordinate our schedules. Maybe I should just bring the girls with me next time I want to go to the beach."
+        ar "My husband really doesn't put in a lot of effort to coordinate our schedules." 
+        ar "Maybe I should just bring the girls with me next time I want to go to the beach."
         ar "Oh do you see that little cabin? Just let me get off there, that's where we used to keep our boats." 
         y "I see. There you go, enjoy your time here."
         $ karma += 0
