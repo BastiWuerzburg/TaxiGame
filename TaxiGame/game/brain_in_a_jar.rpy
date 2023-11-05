@@ -34,7 +34,7 @@ label simulation:
         "After getting back to solid ground it just stays still on the walkway."
         "You decide to drive away and continue your day as usual"
         $ karma += 1
-        $ money +=
+        $ money += 0
         jump simulation_end
     
     label play_along:
@@ -47,6 +47,7 @@ label simulation:
         y "We have arrived dear sir."
         "The Brainn exits the taxi, thanks you, pays and leaves leaving you to continue your day as usual."
         $ karma += 0
+        $ money += 0
         jump simulation_end
     
     label change_the_parameters:
@@ -63,8 +64,8 @@ label simulation:
         y "Nothing unusual."
         "You drop the extremely confused brain of at the aquarium and they pay you the normal price."
         "You drive away hoping you didn´t ruin their mental stability to much"
-        $ -= 1
-        jump simulation_end
+        $ karma -= 1
+        $ money += 0
     
     label simulation_end:
     jump choose_passenger

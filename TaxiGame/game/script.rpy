@@ -12,6 +12,10 @@ default top_hat = False
 default karma = 50
 default money = 0
 
+# 3D view settings
+
+#define config.perspective = (100, z, 100000)
+
 camera:
     perspective True
 
@@ -62,12 +66,14 @@ label start:
 
     label choose_passenger:
 
-        scene bg backseats#:
-            #xalign 0.5 yalign 0.5 zpos -1000
-        show bg frontseat#:
-            #xalign 0.5 yalign 0.5 zpos 100
-        show fg dashboard#:
-            #xalign 0.5 yalign 0.5 zpos 200
+        scene backseats:
+            xalign 0.5 yalign 0.5 zpos 1
+        #show bg backseats:
+        #    xalign 0.5 yalign 0.5 zpos 0.6
+        show frontseat:
+            xalign 0.5 yalign 0.5 zpos 0.5
+        show dashboard:
+            xalign 0.5 yalign 0.5 zpos 0
         show screen Karma
         show screen Money
 

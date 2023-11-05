@@ -29,11 +29,12 @@ label kpop:
         y "What you’re friend?"
         hb "No, my mother! The House servants told me that she and Joo-yeon met and talked and Joo-yeon ran out of the house crying."
         y "That doesn’t sound too good."
-        Hb "And I still don’t even know what my mother said, I know she’s against us being together, but she won’t be able to keep us apart!"
+        hb "And I still don’t even know what my mother said, I know she’s against us being together, but she won’t be able to keep us apart!"
         y "Love is a powerful thing, my friend. I've seen many stories unfold in this taxi. Sometimes, the heart's desire is all that matters."
         y "We’re almost at the airport, now go get her!"
         hb "Thank you so much!"
         $ karma += 1
+        $ money += 0
         jump kpop_end
 
     label speed_limit:
@@ -49,6 +50,7 @@ label kpop:
         y "Well whatever she said, I hope you can fix it. We’re here now, so good luck, young man!"
         hb "Thank you, Mister!"
         $ karma += 0
+        $ money += 0
         jump kpop_end
 
     label drive_slowly:
@@ -67,6 +69,7 @@ label kpop:
         y "…. Well we’re here now, so good luck."
         hb "Yeah, the flight just left. I’ll go check anyway, but I don’t think I’ll catch her thanks to you. Thanks for nothing, I guess."
         $ karma -= 1
+        $ money += 0
 
     label kpop_end:
     jump choose_passenger

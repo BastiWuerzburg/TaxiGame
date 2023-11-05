@@ -22,6 +22,7 @@ label stalker:
         s "No, that would be great, I can call a friend when I loaded my phone."
         y "No problem at all."
         $ karma += 1
+        $ money += 0
         jump stalker_end
 
     label specific_destination:
@@ -35,6 +36,7 @@ label stalker:
         s "Yes, yes, just take me to the nearest police station."
         y "Very well, off we go."
         $ karma += 0
+        $ money += 0
         jump stalker_end
 
     label came_from:
@@ -45,6 +47,7 @@ label stalker:
         y "Here we are, away from where you got in."
         s "Thank you so much."
         $ karma -= 1
+        $ money += 0
 
     label stalker_end:
     jump choose_passenger

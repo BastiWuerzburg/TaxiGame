@@ -31,6 +31,7 @@ label karen:
         y "Here we are, any complaints you can bring to the front desk"
         ka "Fine!"
         $ karma += 1
+        $ money += 0
         jump karen_end
 
     label throw_out:
@@ -43,6 +44,7 @@ label karen:
         "Karen leaves"
         y "Good."
         $ karma -= 1
+        $ money += 0
         jump karen_end
 
     label i_am_manager:
@@ -54,6 +56,7 @@ label karen:
         y "Sure, but it’s still going to cost you."
         ka "Fine! Never again!"
         $ karma += 0
+        $ money += 0
 
     label karen_end:
     jump choose_passenger

@@ -35,6 +35,7 @@ label alien:
         y "..."
         y "Here we are. If you go that way, you'll meet the most powerful human on this planet."
         $ karma += 1
+        $ money += 0
         jump alien_end
 
     label random_person:
@@ -49,6 +50,7 @@ label alien:
         a "This is wheeereee you humans say „thank you“, is that correeect."
         y "You are very welcome."
         $ karma += 0
+        $ money += 0
         jump alien_end
 
     label wife:
@@ -63,6 +65,7 @@ label alien:
         a "I'm from ~3>≠¥£8, theeereee is no eeenglish word."
         y "Hm, how troublesome. Anyway, here we are. If you ring the top doorbell, my wife should answer. You can meet her then."
         $ karma -= 1
+        $ money += 0
 
     label alien_end:
     jump choose_passenger
