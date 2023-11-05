@@ -26,15 +26,19 @@ label stripper_nun:
     y "Then is it you personal preference to dress like this outside of your convent?"
     sc "Well, the lord guides us through the mysterious sea of life and we've hit a bit of troubled waters lately."
     y "Troubled waters?"
-    sc "Well, our abbess joined the convent after she finished treatment for her gambling addiction. And she was better. It was all fine. But you see our abbess has control over all the finances in the monastery."
+    sc "Well, our abbess joined the convent after she finished treatment for her gambling addiction. And she was better. It was all fine." 
+    sc "But you see our abbess has control over all the finances in the monastery."
     y "That seems really risky. Giving someone with that history ALL your money."
-    sc "Yeah, yeah, you know what they say about hindsight. But Jesus teaches us to give second chances. It doesn't really matter at this point though, we're already in way over our heads with debt."
+    sc "Yeah, yeah, you know what they say about hindsight. But Jesus teaches us to give second chances." 
+    sc "It doesn't really matter at this point though, we're already in way over our heads with debt."
     y "And you dressing like this somehow helps with that?"
     sc "well not necessarily just dressing like this, but it does make the dancing easier."
     y "...sooooo you're a stripper?"
     sc "I'm an EXOTIC DANCER!"
     y "My apologies. Exotic dancer then. So, you decided to use the greed of middle-aged men to save your monastery?"
-    sc "Well the bible does teach to use our talents to make the most of our lives. And it actually makes good money. I will stop the second we don't need it anymore, until then it's the best way I can help. The Lord will understand my intentions and forgive me in his eternal grace."
+    sc "Well the bible does teach to use our talents to make the most of our lives and it actually makes good money." 
+    sc "I will stop the second we don't need it anymore, until then it's the best way I can help." 
+    sc "The Lord will understand my intentions and forgive me in his eternal grace."
     y "And do your fellow sisters know about how you're helping them?"
     sc "Ah not exactly and they MUSTN'T find out about it, so I'll have to change in the car, you don't really mind, right?"
 
@@ -69,7 +73,7 @@ label stripper_nun:
     label private_place:
         y "Ah, I don't think that's the best Idea, anyone could see you, a car has windows after all. Why don't I let you get out at a public restroom so you can change?"
         sc "Sure, that'd be alright as well. Oh, I think I see one right ahead. Please wait a second!"
-        "gets out and returns dressed in a habit"
+        "she gets out and returns after a few minutes dressed in a habit"
         scene background_video
         show backseats:
             xalign 0.5 yalign 0.5 zpos 1
