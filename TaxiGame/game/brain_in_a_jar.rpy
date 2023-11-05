@@ -35,7 +35,8 @@ label simulation:
     label truth:
         y "Umm, Brain, my friend, are you aware that the world you’re living in is, in fact, a simulation?"
         biaj "Truly? But that can’t be. Everything is so real."
-        y "It’s the truth. We are not in a submarine, but on land. Think about it. How would you be able to withstand the pressure of the sea floor in that jar of yours."
+        y "It’s the truth. We are not in a submarine, but on land." 
+        y "Think about it. How would you be able to withstand the pressure of the sea floor in that jar of yours."
         biaj "..."
         biaj "You have a point… What about atlantis?"
         y "Atlantis is a myth. A legend humans came up with."

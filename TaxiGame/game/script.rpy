@@ -39,10 +39,10 @@ image mc_moving:
 # stats
 
 screen Karma:
-     text "Your karma is: [karma]" xpos 0.2 ypos 0.1
+     text "Your karma is: [karma]" xpos 0.18 ypos 0.48
 
 screen Money:
-     text "Money earned: [money] $" xpos 0.2 ypos 0.2
+     text "Money earned: [money] $" xpos 0.18 ypos 0.52
 
 # The game starts here.
 
@@ -81,8 +81,7 @@ label start:
         if pasangengersLeft < 1:
             jump game_end
         #select a random passenger    
-        #$passenger = passengers[passenger_indexes.pop(int(renpy.random.random() * len(passenger_indexes) - 1))]
-        $passenger = passengers[1]
+        $passenger = passengers[passenger_indexes.pop(int(renpy.random.random() * len(passenger_indexes) - 1))]
         $pasangengersLeft -= 1
         
         menu:

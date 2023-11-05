@@ -54,7 +54,8 @@ label conspiracy:
         dct "wha...? I was just at the bar! You didnt kidnap me did you?"
         y "Nope, now pay up. You have amassed quite the price due to time and distance traveled."
         y "Also, take back your tinfoil-tophat. I already have my own hat."
-        "The drunken conspiracy theorist pays up unhapily and gets out. Next time wake the drunk person up you idiot!"
+        "The drunken conspiracy theorist pays up unhapily and gets out." 
+        dct "Next time wake the drunk person up you idiot!"
         $ karma -= 1
         $ money += 60
     

@@ -13,6 +13,9 @@ label game_end:
     show dashboard:
         xalign 0.5 yalign 0.5 zpos 0.01
 
+    show box:
+        xalign 0.5 yalign 0.5 zpos 0.001
+
     show screen Karma
     show screen Money
 
