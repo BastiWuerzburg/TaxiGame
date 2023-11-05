@@ -9,7 +9,7 @@ label simulation:
         xalign 0.5 yalign 0.5 zpos 0.5
     show mc:
         xalign 0.9999 yalign 0 zpos 0.2
-    show bonzai:
+    show brain:
         xalign 0 yalign 0 zpos 0.1
     show dashboard:
         xalign 0.5 yalign 0.5 zpos 0.01
