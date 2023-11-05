@@ -3,6 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+#define e = Character("Eileen")
 define y = Character("You")
 
 default purse_found = False
@@ -10,8 +11,11 @@ default tinfoil_hat = False
 default top_hat = False
 default karma = 50
 default money = 0
-
-image background_video = Movie(play="Fenster_animation5.webm", pos=(0, 0), anchor=(0, 0))
+default pasangengersLeft = 5
+default passengers = ["Drunken Conspiracy Theorist", "Goose", "Alien", "Stalker", "Wallet", "Kpop", "Beach", "Karen", "Bonzai Tree", "Old Lady", "Stripper Nun", "Brain in a Jar"]
+        #define a array of jump labels
+default jump_labels = ["conspiracy", "goose", "alien", "stalker", "wallet", "kpop", "beach", "karen", "bonzai", "old_lady", "stripper_nun", "simulation"]
+default passenger_indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 # 3D view settings
 
@@ -67,45 +71,28 @@ label start:
 
     label choose_passenger:
 
-        scene background_video
-        show backseats:
+        scene backseats:
             xalign 0.5 yalign 0.5 zpos 1
+        #show bg backseats:
+        #    xalign 0.5 yalign 0.5 zpos 0.6
         show frontseat:
             xalign 0.5 yalign 0.5 zpos 0.5
-        show mc:
-            xalign 0.9999 yalign 0 zpos 0.2
         show dashboard:
-            xalign 0.5 yalign 0.5 zpos 0.01
-        
+            xalign 0.5 yalign 0.5 zpos 0
         show screen Karma
         show screen Money
-
+        #todo: add and jump to a end scene
+        if pasangengersLeft < 1:
+            jump end_game
+        #select a random passenger    
+        $passenger = passengers[passenger_indexes.pop(int(renpy.random.random() * len(passenger_indexes) - 1))]
+        $pasangengersLeft -= 1
+        
         menu:
-            "Choose a passenger"
-            "Drunken Conspiracy Theorist":
-                jump conspiracy
-            "Goose":
-                jump goose
-            "Alien":
-                jump alien
-            "Stalker":
-                jump stalker
-            "Wallet":
-                jump wallet
-            "Kpop":
-                jump kpop
-            "Beach":
-                jump beach
-            "Karen":
-                jump karen
-            "Bonzai Tree":
-                jump bonzai
-            "Old Lady":
-                jump old_lady
-            "Stripper Nun":
-                jump stripper_nun
-            "Brain in a Jar":
-                jump simulation
+           #create a menug item
+            "Pick up [passenger]":
+                $renpy.jump(jump_labels[passengers.index(passenger)])
+
             "END":
                 jump end_game
 
