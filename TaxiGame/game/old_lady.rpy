@@ -25,8 +25,8 @@ label old_lady:
      y "That sounds absolutely lovely, I hope you will have a nice feast!"
      ol "Thank you very much. Im sure you will also have a great time, just be nice and keep working hard and you will have an even better time then me."
      "You arrive at the requested location and the lady steps out of the vehicle but leaves the groceries in the taxi"
-     y "Aren´t you going to take your bags with you?"
-     ol "Oh yes I am, but I´ll open the doors first so I wont have to work as hard to get them upstairs."
+     y "Aren't you going to take your bags with you?"
+     ol "Oh yes I am, but I'll open the doors first so I wont have to work as hard to get them upstairs."
 
      menu:
           "Help her with the groceries":
@@ -53,7 +53,7 @@ label old_lady:
 
      label wait_old_lady:
           "You decide to wait untill the lady returns to pick up her groceries which she does in 4 minutes"
-          ol "Thank you for waiting for me. I know people who would have driven away while I wasn´t present. You are a kind person sir and I hope you have a nice holiday."
+          ol "Thank you for waiting for me. I know people who would have driven away while I wasn't present. You are a kind person sir and I hope you have a nice holiday."
           y "No problem, you have good holidays as well."
           "As you drive away you wonder what floor the lady lived on for her to take so long to unlock a door"
           $ karma += 0

@@ -16,13 +16,13 @@ label bonzai:
     show dashboard:
         xalign 0.5 yalign 0.5 zpos 0.01
 
-    y "My my, a Bonsai, haven’t had a plant in a while."
+    y "My my, a Bonsai, haven't had a plant in a while."
     bo "Yeah, I spruced myself of for a root-ine meeting."
     y "Where would you like to go, my friend?"
     bo "The woods, please, in just a few sTreets. The latest project has leafed my team a bit stumped."
     y "Well, I hope things will be resolved at the meeting."
     bo "Yeah, last time time was online and the oak had a bit of trouble logging in."
-    y "Good thing it’s not online anymore then."
+    y "Good thing it's not online anymore then."
     bo "Quite, sometimes the stupidity in our branch makes me want to be able to face palm."
     y "It cant be helped. "
     bo "Actually, wood you have some water for me, I happen to be quite thirsty."
@@ -47,22 +47,22 @@ label bonzai:
         jump bonzai_end
 
     label public_water_fountain:
-        y "I’d like to keep my water bottle, so I’ll drive you to the park for a quick break. There should be a fountain there."
-        bo "Excellent! I couldn’t stand the sappy comments from the Tree-o, especially Acorn. It’s nuts!"
-        y "The park is right over there. I’ll wait for you while you go get a drink."
+        y "I'd like to keep my water bottle, so I'll drive you to the park for a quick break. There should be a fountain there."
+        bo "Excellent! I couldn't stand the sappy comments from the Tree-o, especially Acorn. It's nuts!"
+        y "The park is right over there. I'll wait for you while you go get a drink."
         bo "Thank you. I live for rest."
         $ karma += 0
         $ money += 30
         jump bonzai_end
 
     label heat:
-        y "Sorry, I don’t have any water for you. You turn up the heat"
-        bo "My, what a shame. If I can’t focus, the others are going to throw shade at me."
+        y "Sorry, I don't have any water for you. You turn up the heat"
+        bo "My, what a shame. If I can't focus, the others are going to throw shade at me."
         bo "Hmm, is it just me, or am I drying out a bit?"
         y "It got a bit cold, so I turned up the heat."
-        bo "I can’t be-leaf it! How could you? What tree- chery! I could get sick!"
-        y "Really? But it’s no issue, we’ll be at your destination before that happens."
-        bo "That’s a re-leaf. What horrible tree-tment."
+        bo "I can't be-leaf it! How could you? What tree- chery! I could get sick!"
+        y "Really? But it's no issue, we'll be at your destination before that happens."
+        bo "That's a re-leaf. What horrible tree-tment."
         $ karma -= 1
         $ money += 20
 

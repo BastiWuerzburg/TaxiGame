@@ -20,13 +20,13 @@ label karen:
     ka "Are you deaf? I said the closest one."
     y "Alright, off we go."
     ka "Do you see that girl over there? Green hair, GREEN! This world is devolving! As if they want to merge with the grass."
-    y "There’s nothing wrong with dyeing your hair."
+    y "There's nothing wrong with dyeing your hair."
     ka "MY hair? No one touches my hair!"
-    y "No, I meant ones hair, as in there’s nothing wrong with wanting to dye ones own hair."
+    y "No, I meant ones hair, as in there's nothing wrong with wanting to dye ones own hair."
     ka "Hmp."
     "You notice a roadwork sign"
     y "Road work ahead? I sure hope it does! Ha ha."
-    y "We’re going to have to take a detour."
+    y "We're going to have to take a detour."
     ka "A detour? Unacceptable! Take me to your manager!"
 
     menu:
@@ -48,12 +48,12 @@ label karen:
         jump karen_end
 
     label throw_out:
-        y "Ma’am, you are going to have to leave my cab."
+        y "Ma'am, you are going to have to leave my cab."
         ka "What?! Why?"
         y "Your behaviour is unprofessional and rude and I have the right to refuse service."
         ka "WHAT? You are the rude one!"
         y "Are you deaf? I said to get out of my cab."
-        ka "Inexcusable! I’m never coming back!"
+        ka "Inexcusable! I'm never coming back!"
         "Karen leaves"
         y "Good."
         $ karma -= 1
@@ -64,9 +64,9 @@ label karen:
         y "I am the manager."
         "She gasps loudly"
         ka "How? No manager would be doing a job as lowly as driving a cab."
-        y "Well I am and I don’t see why you would need to complain. There’s nothing wrong with a detour."
-        ka "Let me out. I’m calling a new cab."
-        y "Sure, but it’s still going to cost you."
+        y "Well I am and I don't see why you would need to complain. There's nothing wrong with a detour."
+        ka "Let me out. I'm calling a new cab."
+        y "Sure, but it's still going to cost you."
         ka "Fine! Never again!"
         $ karma += 0
         $ money += 10

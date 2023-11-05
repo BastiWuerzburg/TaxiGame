@@ -28,7 +28,7 @@ label wallet:
             jump keep
 
     label address:
-        y "Well, let’s see…gift cards, business cards, and an address, sure, I can bring it there."
+        y "Well, let's see…gift cards, business cards, and an address, sure, I can bring it there."
         "you drive to the address and leave it in the mailbox"
         $ karma += 0
         $ money += 0
@@ -39,7 +39,7 @@ label wallet:
         "you call the number"
         y "Hello? I found this wallet with this phone number."
         wo "Really? Thank goodness, I was in the middle of panicking about not finding it."
-        y "Well, good thing I found it then. I’ll leave it for you at the police station in top-hat street."
+        y "Well, good thing I found it then. I'll leave it for you at the police station in top-hat street."
         wo "Thank you so much!"
         $ karma += 1
         $ money += 0 
@@ -48,7 +48,7 @@ label wallet:
     label keep:
         y "Hmm, this has a good sum in it…"
         y "I do need a little change. The gas prices are rising after all."
-        y "I’m going to keep this, but maybe I’ll leave the cards at the next mail station."
+        y "I'm going to keep this, but maybe I'll leave the cards at the next mail station."
         "you keep the wallet"
         $ karma -= 1
         $ money += 100
