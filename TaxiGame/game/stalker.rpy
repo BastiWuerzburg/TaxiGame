@@ -21,6 +21,7 @@ label stalker:
         y "You wouldn’t be the first one to ask me such a favour. I’m going to drive a confusing route and bring you to a populated area, or would you prefer a different location?"
         s "No, that would be great, I can call a friend when I loaded my phone."
         y "No problem at all."
+        $ karma += 1
         jump stalker_end
 
     label specific_destination:
@@ -33,6 +34,7 @@ label stalker:
         y "If you want to get away fast, you should make a decision."
         s "Yes, yes, just take me to the nearest police station."
         y "Very well, off we go."
+        $ karma += 0
         jump stalker_end
 
     label came_from:
@@ -42,6 +44,7 @@ label stalker:
         "you drive away and around the block towards the direction your passenger came from"
         y "Here we are, away from where you got in."
         s "Thank you so much."
+        $ karma -= 1
 
     label stalker_end:
     jump choose_passenger

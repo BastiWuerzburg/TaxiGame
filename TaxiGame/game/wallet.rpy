@@ -17,6 +17,7 @@ label wallet:
     label address:
         y "Well, let’s see…gift cards, business cards, and an address, sure, I can bring it there."
         "you drive to the address and leave it in the mailbox"
+        $ karma += 0
         jump wallet_end
 
     label number:
@@ -26,6 +27,7 @@ label wallet:
         wo "Really? Thank goodness, I was in the middle of panicking about not finding it."
         y "Well, good thing I found it then. I’ll leave it for you at the police station in top-hat street."
         wo "Thank you so much!"
+        $ karma += 1 
         jump wallet_end
 
     label keep:
@@ -33,6 +35,7 @@ label wallet:
         y "I do need a little change. The gas prices are rising after all."
         y "I’m going to keep this, but maybe I’ll leave the cards at the next mail station."
         "you keep the wallet"
+        $ karma -= 1
     
     label wallet_end:
     jump choose_passenger

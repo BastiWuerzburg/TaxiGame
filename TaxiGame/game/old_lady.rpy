@@ -33,6 +33,7 @@ label old_lady:
           ol "Thank you so, so much!"
           y "It is my pleasure, your welcome."
           "You walk back downstairs and get back to driving your taxi"
+          $ karma += 1
           jump old_lady_end
 
      label wait_old_lady:
@@ -40,12 +41,14 @@ label old_lady:
           ol "Thank you for waiting for me. I know people who would have driven away while I wasn´t present. You are a kind person sir and I hope you have a nice holiday."
           y "No problem, you have good holidays as well."
           "As you drive away you wonder what floor the lady lived on for her to take so long to unlock a door"
+          $ karma += 0
           jump old_lady_end
 
      label steel_food:     
           "Deciding that you want to \"burrow\" groceries you step on the gas pedal and drive away."
           "As you turn the corner a block away you barely make out the old woman looking around in a panic in your rear mirror."
           "Congratulations. You have taken the groceries of an old lady. Do you feel proud of yourself?"
+          $ karma -= 1
 
      label old_lady_end:
      jump choose_passenger

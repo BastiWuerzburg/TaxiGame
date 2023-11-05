@@ -39,6 +39,7 @@ label stripper_nun:
         sc "Thank you, Mister. I appreciate it."
         y "Are you dressed yet? We're arriving."
         sc "Oh yes, I'm decent again. I need to hurry along. May God bless you, good Sir!"
+        $ karma += 1
         jump stripper_nun_end
 
     label private_place:
@@ -47,6 +48,7 @@ label stripper_nun:
         "gets out and returns dressed in a habit"
         sc "Thank you for waiting, let's head to the church now."
         y "Of course, sister. We're almost there."
+        $ karma += 0
         jump stripper_nun_end
 
     label peep:
@@ -63,6 +65,7 @@ label stripper_nun:
         sc "Excuse me! What do you think you're doing?! This is not your private peepshow. You should be ashamed of yourself Stop the car right now and let me get off!"
         y "I didn't think one more guy seeing you in underwear would really make a difference. But as you wish, miss. Then this is your stop."
         "Sister Candice slams open the car door and runs off with an outraged huff"
+        $ karma -= 0
 
     label stripper_nun_end:
     jump choose_passenger

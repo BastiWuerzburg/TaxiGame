@@ -34,6 +34,8 @@ label alien:
         a "Strange behaviour, you humans."
         y "..."
         y "Here we are. If you go that way, you'll meet the most powerful human on this planet."
+        $ karma += 1
+        jump alien_end
 
     label random_person:
         a "Soo, what is this ship you useeee?"
@@ -46,6 +48,8 @@ label alien:
         y "There! That's the leader of earth. The guy with the tin foil top hat. Go talk to him, he's a funny guy."
         a "This is wheeereee you humans say „thank you“, is that correeect."
         y "You are very welcome."
+        $ karma += 0
+        jump alien_end
 
     label wife:
         a "Wheeereee areee weee going?"
@@ -58,6 +62,7 @@ label alien:
         y "So, where are you from?"
         a "I'm from ~3>≠¥£8, theeereee is no eeenglish word."
         y "Hm, how troublesome. Anyway, here we are. If you ring the top doorbell, my wife should answer. You can meet her then."
+        $ karma -= 1
 
     label alien_end:
     jump choose_passenger

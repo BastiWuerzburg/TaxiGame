@@ -32,6 +32,7 @@ label beach:
         ar "It's so kind of you to worry, but really just dipping my toes in the water can't be that bad."
         y "If you're sure that's what you want just be sure to keep yourself warm, miss. Here you are, enjoy your time at the beach."
         ar "Thanks, I will."
+        $ karma += 1
         jump beach_end
 
     label say_nothing:
@@ -47,6 +48,7 @@ label beach:
         ar "My husband really doesn't put in a lot of effort to coordinate our schedules. Maybe I should just bring the girls with me next time I want to go to the beach."
         ar "Oh do you see that little cabin? Just let me get off there, that's where we used to keep our boats." 
         y "I see. There you go, enjoy your time here."
+        $ karma += 0
         jump beach_end
 
     label get_sick:
@@ -59,6 +61,7 @@ label beach:
         y "You see? Of course you're gonna have a great time. There we are, the beach and doesn't the water just look lovely?"
         ar "Oh, absolutely, yes it does! Thanks for taking me."
         y "You enjoy your time and be sure to stay in the water for a while!"
+        $ karma -= 1
 
     label beach_end:
     jump choose_passenger

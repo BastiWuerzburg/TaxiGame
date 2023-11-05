@@ -30,6 +30,7 @@ label karen:
         "You drive Karen to the company building"
         y "Here we are, any complaints you can bring to the front desk"
         ka "Fine!"
+        $ karma += 1
         jump karen_end
 
     label throw_out:
@@ -41,15 +42,18 @@ label karen:
         ka "Inexcusable! I’m never coming back!"
         "Karen leaves"
         y "Good."
+        $ karma -= 1
         jump karen_end
 
     label i_am_manager:
-        y "I am the manager!"
-        ka "gasp How? No manager would be doing a job as lowly as driving a cab."
+        y "I am the manager."
+        "She gasps loudly"
+        ka "How? No manager would be doing a job as lowly as driving a cab."
         y "Well I am and I don’t see why you would need to complain. There’s nothing wrong with a detour."
         ka "Let me out. I’m calling a new cab."
         y "Sure, but it’s still going to cost you."
         ka "Fine! Never again!"
+        $ karma += 0
 
     label karen_end:
     jump choose_passenger
