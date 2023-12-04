@@ -46,6 +46,7 @@ label bonzai:
         y "Yes, I always carry a water bottle in my cab."
         bo "That is indeed a good thing this nice Sap-timber."
         y "Here, have some water. Load up your baTree. I know it's a great pine to be thirsty. you give the tree your water bottle"
+        play sound ["sounds/blub.mp3"] 
         bo "Many thanks. Now I might tree able to focus and find the root of the problem. Great progress for the indus-tree."
         y "You're very welcome. We should be arriving momentariTree, just after that leaf-t turn."
         bo "Oak-ay! Here, have some oxygen, no twigs attached."
