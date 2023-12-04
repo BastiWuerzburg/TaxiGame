@@ -1,6 +1,14 @@
 # Alienszenario
 define a = Character("Alien")
 
+# animations 
+
+image alien_moving:
+    animation
+    "alien"
+    xalign -0.8 yalign 0 zpos 0.1
+    linear 2.0 xalign 0.0
+
 label alien:
 
     scene background_video
@@ -10,8 +18,7 @@ label alien:
         xalign 0.5 yalign 0.5 zpos 0.5
     show mc:
         xalign 0.9999 yalign 0 zpos 0.2
-    show alien:
-        xalign 0 yalign 0 zpos 0.1
+    show alien_moving
     show dashboard:
         xalign 0.5 yalign 0.5 zpos 0.01
 

@@ -1,6 +1,14 @@
 # Scenario 4: Beach-Trip Character Name Ariel
 define ar = Character("Ariel")
 
+# animations 
+
+image beach_moving:
+    animation
+    "beach"
+    xalign -0.8 yalign 0 zpos 0.1
+    linear 2.0 xalign 0.0
+
 label beach:
 
     scene background_video
@@ -10,8 +18,7 @@ label beach:
         xalign 0.5 yalign 0.5 zpos 0.5
     show mc:
         xalign 0.9999 yalign 0 zpos 0.2
-    show beach:
-        xalign 0 yalign 0 zpos 0.1
+    show beach_moving
     show dashboard:
         xalign 0.5 yalign 0.5 zpos 0.01
 

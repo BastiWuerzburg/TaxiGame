@@ -1,5 +1,13 @@
 define go = Character("Goose")
 
+# animations 
+
+image goose_moving:
+    animation
+    "goose"
+    xalign -0.8 yalign 0 zpos 0.1
+    linear 2.0 xalign 0.0
+
 label goose:
 
     scene background_video
@@ -9,16 +17,13 @@ label goose:
         xalign 0.5 yalign 0.5 zpos 0.5
     show mc:
         xalign 0.9999 yalign 0 zpos 0.2
-    show goose:
-        xalign 0 yalign 0 zpos 0.1
-    play voice["sounds/quack.mp3"]
+    show goose_moving
     show dashboard:
         xalign 0.5 yalign 0.5 zpos 0.01
 
     "A goose hops into the cab." 
     go "Honk! Honk! Honk!"
-        
-
+    play sound ["sounds/quack.mp3"]        
 
     menu:
         "What are you going to do?"

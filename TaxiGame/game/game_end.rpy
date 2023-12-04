@@ -3,7 +3,7 @@ define wi = Character("Wife")
 
 label game_end:
 
-    scene background_video
+    scene street
     show backseats:
         xalign 0.5 yalign 0.5 zpos 1
     show frontseat:

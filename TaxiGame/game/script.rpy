@@ -11,7 +11,7 @@ default top_hat = False
 default karma = 0
 default money = 0
 default pasangengersLeft = 7
-default passengers = ["Drunken Conspiracy Theorist", "Goose", "Alien", "Stalker Victim", "Wallet", "Kpop Fan", "Beach Girl", "Karen", "Bonzai Tree", "Old Lady", "Stripper Nun", "Brain in a Jar"]
+default passengers = ["Drunken Conspiracy Theorist", "Goose", "Alien", "Stalker Victim", "Wallet", "K-pop Star", "Beach Girl", "Karen", "Bonzai Tree", "Old Lady", "Stripper Nun", "Brain in a Jar"]
         #define a array of jump labels
 default jump_labels = ["conspiracy", "goose", "alien", "stalker", "wallet", "kpop", "beach", "karen", "bonzai", "old_lady", "stripper_nun", "simulation"]
 default passenger_indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
@@ -33,8 +33,8 @@ camera background:
 image mc_moving:
     animation
     "mc"
-    xalign -1.0
-    linear 5.0 xalign 1.0
+    xalign 2.0
+    linear 3.0 xalign 1.0
 
 # stats
 
@@ -62,8 +62,10 @@ label start:
 
     # These display lines of dialogue.
 
-    y "A new work day has begun."
-    y "My taxi here I come!"
+    play sound ["sounds/close.mp3"]
+    y "A new working day has begun."
+    y "My taxi, here I come!"
+    play sound ["sounds/start.mp3"]
     y "I feel like today is gonna be a good day."
 
     label choose_passenger:
@@ -88,8 +90,8 @@ label start:
         menu:
            #create a menug item
             "Pick up [passenger]":
-                play sound ["sounds/close.wav","sounds/close.wav","sounds/start.wav"]
-                pause 2.1
+                play sound ["sounds/close.mp3"]
+                pause 0.1 #2.1
                 $renpy.jump(jump_labels[passengers.index(passenger)])
 
             "END":

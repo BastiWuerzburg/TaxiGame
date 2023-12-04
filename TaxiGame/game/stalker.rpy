@@ -1,6 +1,14 @@
 # Stalkerszenario
 define s = Character("Stalker")
 
+# animations 
+
+image victim_moving:
+    animation
+    "victim"
+    xalign -0.8 yalign 0 zpos 0.1
+    linear 2.0 xalign 0.0
+
 label stalker:
 
     scene background_video
@@ -10,8 +18,7 @@ label stalker:
         xalign 0.5 yalign 0.5 zpos 0.5
     show mc:
         xalign 0.9999 yalign 0 zpos 0.2
-    show victim:
-        xalign 0 yalign 0 zpos 0.1
+    show victim_moving
     show dashboard:
         xalign 0.5 yalign 0.5 zpos 0.01
 

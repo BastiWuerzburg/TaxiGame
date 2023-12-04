@@ -1,5 +1,13 @@
 define dct = Character("Drunken Conspiracy Theorist")
 
+# animations 
+
+image conspiracy_moving:
+    animation
+    "conspiracy"
+    xalign -0.8 yalign 0 zpos 0.1
+    linear 2.0 xalign 0.0
+
 label conspiracy:
 
     scene background_video
@@ -9,8 +17,7 @@ label conspiracy:
         xalign 0.5 yalign 0.5 zpos 0.5
     show mc:
         xalign 0.9999 yalign 0 zpos 0.2
-    show conspiracy:
-        xalign 0 yalign 0 zpos 0.1
+    show conspiracy_moving
     show dashboard:
         xalign 0.5 yalign 0.5 zpos 0.01
 

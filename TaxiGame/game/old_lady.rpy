@@ -1,6 +1,14 @@
 # Old lady with groceries
 define ol = Character("Old Lady")
 
+# animations 
+
+image granny_moving:
+    animation
+    "granny"
+    xalign -0.8 yalign 0 zpos 0.1
+    linear 2.0 xalign 0.0
+
 label old_lady:
 
      scene background_video
@@ -10,8 +18,7 @@ label old_lady:
           xalign 0.5 yalign 0.5 zpos 0.5
      show mc:
           xalign 0.9999 yalign 0 zpos 0.2
-     show granny:
-          xalign 0 yalign 0 zpos 0.1
+     show granny_moving
      show dashboard:
           xalign 0.5 yalign 0.5 zpos 0.01
 
